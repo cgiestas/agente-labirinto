@@ -4,24 +4,12 @@ import time
 import itertools
 import matplotlib.pyplot as plt
 
-from busca_classica import (
+from src.busca_classica import (
     TenhoQueExplorar_Prioridade, 
     executar_busca_classica,
 )
 
 dicionario_real = {}
-
-def mapear_labirinto(matriz):
-    pontos = {}
-
-    for l in range(len(matriz)):
-        for c in range(len(matriz)):
-            char = matriz[l][c]
-
-            if char not in ['#', ' ', '.', '\n']:
-                pontos[char] = (l,c)
-
-    return pontos
 
 def construir_gps(matriz, pontos_mapeados):
 
