@@ -152,9 +152,8 @@ def teste(funcao_busca, pontos_coleta, repeticoes=30):
     qtd_sucesso = custos_finais.count(melhor_custo_global)
     taxa_sucesso = (qtd_sucesso / repeticoes) * 100
 
-    print("\n" + "="*40)
-    print(f"METRICAS OBRIGATORIAS ({repeticoes} Rodadas)")
     print("="*40)
+    print(f"METRICAS OBRIGATORIAS ({repeticoes} Rodadas)")
     print(f"Melhor custo: {melhor_custo_global}")
     print(f"Pior custo: {pior_custo_global}")
     print(f"Custo medio: {custo_medio:.2f}")
